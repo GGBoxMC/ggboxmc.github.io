@@ -27,9 +27,9 @@ git commit -m "feat: GGBox Launcher resmi indirme sitesi ve kurulum dosyalari (v
 Write-Host "[3/4] GitHub remote kontrol ediliyor..." -ForegroundColor Green
 $remotes = git remote
 if ($remotes -notcontains "origin") {
-    git remote add origin https://github.com/lopix31/ggboxmc.github.io.git
+    git remote add origin https://github.com/ggboxmc/ggboxmc.github.io.git
 } else {
-    git remote set-url origin https://github.com/lopix31/ggboxmc.github.io.git
+    git remote set-url origin https://github.com/ggboxmc/ggboxmc.github.io.git
 }
 
 Write-Host "[4/4] GitHub'a gonderiliyor (Push)..." -ForegroundColor Green
