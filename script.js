@@ -67,8 +67,27 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // 4. Download Notification Helper
-  const downloadLinks = document.querySelectorAll('a[href*=".exe"], a[href*=".zip"]');
+  // 4. Platform Tabs Switching (Windows / Linux / macOS)
+  const platformTabs = document.querySelectorAll('.platform-tab');
+  const platformPanels = document.querySelectorAll('.platform-panel');
+
+  platformTabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      const targetPlatform = tab.getAttribute('data-platform');
+      
+      platformTabs.forEach(t => t.classList.remove('active'));
+      platformPanels.forEach(p => p.classList.remove('active'));
+
+      tab.classList.add('active');
+      const activePanel = document.getElementById(`panel-${targetPlatform}`);
+      if (activePanel) {
+        activePanel.classList.add('active');
+      }
+    });
+  });
+
+  // 5. Download Notification Helper
+  const downloadLinks = document.querySelectorAll('a[href*=".exe"], a[href*=".zip"], a[href*=".deb"], a[href*=".tar.gz"], a[href*=".dmg"]');
   downloadLinks.forEach(link => {
     link.addEventListener('click', (e) => {
       // Konsol ve kullanıcı deneyimi için indirme logu

@@ -449,6 +449,49 @@ h1, h2, h3, h4 {
   flex-wrap: wrap;
 }
 
+/* Multi-platform selector */
+.platform-tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 14px;
+  flex-wrap: wrap;
+}
+
+.platform-tab {
+  background: var(--mc-surface-2);
+  border: 1px solid var(--mc-border);
+  color: var(--mc-text-muted);
+  padding: 7px 14px;
+  border-radius: 8px;
+  font-family: var(--font-heading);
+  font-size: 13px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all var(--transition-fast);
+}
+
+.platform-tab:hover {
+  border-color: var(--mc-accent);
+  color: #ffffff;
+}
+
+.platform-tab.active {
+  background: rgba(255, 61, 180, 0.15);
+  border-color: var(--mc-accent);
+  color: #ffffff;
+  box-shadow: 0 0 12px rgba(255, 61, 180, 0.3);
+}
+
+.platform-panel {
+  display: none;
+}
+
+.platform-panel.active {
+  display: block;
+}
+
 .alt-link {
   color: var(--mc-cyan);
   text-decoration: none;

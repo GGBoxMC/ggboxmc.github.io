@@ -4,6 +4,11 @@ Write-Host "  GGBox Launcher - ggboxmc.github.io Deploy " -ForegroundColor Cyan
 Write-Host "==========================================" -ForegroundColor Magenta
 
 # Git kontrolü
+if (-not (Get-Command git -ErrorAction SilentlyContinue)) {
+    if (Test-Path "$env:LOCALAPPDATA\Programs\MinGit\cmd\git.exe") {
+        $env:PATH = "$env:LOCALAPPDATA\Programs\MinGit\cmd;$env:PATH"
+    }
+}
 $gitCmd = Get-Command git -ErrorAction SilentlyContinue
 
 if (-not $gitCmd) {
