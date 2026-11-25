@@ -1,4 +1,4 @@
-﻿# GGBox Launcher GitHub Pages Yayınlama Scripti
+# GGBox Launcher GitHub Pages Yayınlama Scripti
 Write-Host "==========================================" -ForegroundColor Magenta
 Write-Host "  GGBox Launcher - ggboxmc.github.io Deploy " -ForegroundColor Cyan
 Write-Host "==========================================" -ForegroundColor Magenta
