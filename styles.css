@@ -1,6 +1,6 @@
-/* ==========================================================================
+﻿/* ==========================================================================
    GGBox Launcher Landing Page Stylesheet
-   Theme: Neon Pink × Deep Dark Cyberpunk (Matching GGBox App Design Tokens)
+   Theme: Stealth Monochrome Obsidian (Matching GGBox Official Logo & Tokens)
    ========================================================================== */
 
 :root {
@@ -9,18 +9,18 @@
   --mc-surface-2: #18181b;
   --mc-surface-3: #222227;
   --mc-border: #2a2a32;
-  --mc-border-light: rgba(255, 61, 180, 0.25);
+  --mc-border-light: rgba(255, 255, 255, 0.2);
   
   --mc-text: #f4f4f5;
   --mc-text-muted: #9ca3af;
   --mc-text-dim: #71717a;
 
-  /* Neon Brand Accents */
-  --mc-accent: #ff3db4;
-  --mc-accent-2: #d9148f;
-  --mc-accent-glow: rgba(255, 61, 180, 0.45);
-  --mc-accent-rgb: 255, 61, 180;
-  --mc-on-accent: #24030f;
+  /* Brand Accents - Clean Monochrome & Obsidian (Matching Logo) */
+  --mc-accent: #ffffff;
+  --mc-accent-2: #d4d4d8;
+  --mc-accent-glow: rgba(255, 255, 255, 0.45);
+  --mc-accent-rgb: 255, 255, 255;
+  --mc-on-accent: #09090b;
 
   /* Additional Neon Accents */
   --mc-cyan: #00f0ff;
@@ -78,7 +78,7 @@ body {
 .glow-1 {
   width: 500px;
   height: 500px;
-  background: radial-gradient(circle, rgba(255, 61, 180, 0.35) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
   top: -100px;
   left: 10%;
 }
@@ -136,9 +136,9 @@ h1, h2, h3, h4 {
   font-weight: 700;
   font-size: 13px;
   letter-spacing: 2px;
-  color: var(--mc-accent);
-  background: rgba(255, 61, 180, 0.12);
-  border: 1px solid rgba(255, 61, 180, 0.3);
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   padding: 4px 14px;
   border-radius: 999px;
   margin-bottom: 14px;
@@ -197,15 +197,17 @@ h1, h2, h3, h4 {
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, var(--mc-accent), var(--mc-accent-2));
-  color: #ffffff;
-  box-shadow: 0 4px 20px rgba(255, 61, 180, 0.4);
+  background: #ffffff;
+  color: #09090b;
+  font-weight: 700;
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.25);
 }
 
 .btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 28px rgba(255, 61, 180, 0.6);
-  filter: brightness(1.1);
+  background: #f4f4f5;
+  box-shadow: 0 6px 28px rgba(255, 255, 255, 0.4);
+  color: #000000;
 }
 
 .btn-glow {
@@ -279,7 +281,7 @@ h1, h2, h3, h4 {
   height: 38px;
   border-radius: 8px;
   object-fit: contain;
-  box-shadow: 0 0 16px rgba(255, 61, 180, 0.4);
+  box-shadow: 0 0 16px rgba(255, 255, 255, 0.2);
 }
 
 .brand-name {
@@ -409,8 +411,8 @@ h1, h2, h3, h4 {
 .download-icon-box {
   width: 50px;
   height: 50px;
-  background: rgba(255, 61, 180, 0.15);
-  border: 1px solid rgba(255, 61, 180, 0.4);
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.4);
   color: var(--mc-accent);
   border-radius: 10px;
   display: flex;
@@ -478,10 +480,10 @@ h1, h2, h3, h4 {
 }
 
 .platform-tab.active {
-  background: rgba(255, 61, 180, 0.15);
+  background: rgba(255, 255, 255, 0.15);
   border-color: var(--mc-accent);
   color: #ffffff;
-  box-shadow: 0 0 12px rgba(255, 61, 180, 0.3);
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.3);
 }
 
 .platform-panel {
@@ -543,13 +545,13 @@ h1, h2, h3, h4 {
   overflow: hidden;
   box-shadow: 
     0 20px 50px rgba(0, 0, 0, 0.8),
-    0 0 30px rgba(255, 61, 180, 0.15);
+    0 0 30px rgba(255, 255, 255, 0.15);
   transition: transform var(--transition-normal);
 }
 
 .mockup-frame:hover {
   transform: translateY(-4px);
-  border-color: rgba(255, 61, 180, 0.45);
+  border-color: rgba(255, 255, 255, 0.45);
 }
 
 .mockup-header {
@@ -641,7 +643,7 @@ h1, h2, h3, h4 {
 }
 
 .m-item.active {
-  background: rgba(255, 61, 180, 0.15);
+  background: rgba(255, 255, 255, 0.15);
   color: var(--mc-accent);
   border-left: 3px solid var(--mc-accent);
 }
@@ -651,11 +653,11 @@ h1, h2, h3, h4 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background: radial-gradient(circle at top right, rgba(255, 61, 180, 0.08), transparent 70%);
+  background: radial-gradient(circle at top right, rgba(255, 255, 255, 0.08), transparent 70%);
 }
 
 .mockup-banner {
-  background: linear-gradient(135deg, rgba(255, 61, 180, 0.15), rgba(0, 240, 255, 0.1));
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.15), rgba(0, 240, 255, 0.1));
   border: 1px solid var(--mc-border);
   border-radius: 10px;
   padding: 14px 16px;
@@ -696,7 +698,7 @@ h1, h2, h3, h4 {
 
 .profile-chip.active {
   border-color: var(--mc-accent);
-  box-shadow: 0 0 12px rgba(255, 61, 180, 0.2);
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.2);
 }
 
 .pc-name {
@@ -743,7 +745,7 @@ h1, h2, h3, h4 {
   align-items: center;
   gap: 6px;
   cursor: pointer;
-  box-shadow: 0 0 15px rgba(255, 61, 180, 0.4);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
 }
 
 /* Sections General */
@@ -773,8 +775,8 @@ h1, h2, h3, h4 {
 
 .feature-card:hover {
   transform: translateY(-6px);
-  border-color: rgba(255, 61, 180, 0.4);
-  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.6), 0 0 20px rgba(255, 61, 180, 0.15);
+  border-color: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.6), 0 0 20px rgba(255, 255, 255, 0.15);
 }
 
 .feature-icon {
@@ -792,10 +794,12 @@ h1, h2, h3, h4 {
   height: 26px;
 }
 
-.neon-pink-glow {
-  background: rgba(255, 61, 180, 0.12);
+.neon-pink-glow,
+.neon-white-glow,
+.neon-monochrome-glow {
+  background: rgba(255, 255, 255, 0.12);
   color: var(--mc-accent);
-  border: 1px solid rgba(255, 61, 180, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .neon-cyan-glow {
@@ -875,13 +879,13 @@ h1, h2, h3, h4 {
 }
 
 .comparison-table .highlight-col {
-  background: rgba(255, 61, 180, 0.06);
-  border-left: 1px solid rgba(255, 61, 180, 0.2);
-  border-right: 1px solid rgba(255, 61, 180, 0.2);
+  background: rgba(255, 255, 255, 0.06);
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .comparison-table thead th.highlight-col {
-  background: rgba(255, 61, 180, 0.15);
+  background: rgba(255, 255, 255, 0.15);
   color: var(--mc-accent);
 }
 
@@ -925,7 +929,7 @@ h1, h2, h3, h4 {
   font-family: var(--font-heading);
   font-size: 40px;
   font-weight: 900;
-  color: rgba(255, 61, 180, 0.25);
+  color: rgba(255, 255, 255, 0.25);
   margin-bottom: 14px;
 }
 
@@ -958,7 +962,7 @@ h1, h2, h3, h4 {
 }
 
 .faq-item.active {
-  border-color: rgba(255, 61, 180, 0.5);
+  border-color: rgba(255, 255, 255, 0.5);
 }
 
 .faq-question {
@@ -1009,12 +1013,12 @@ h1, h2, h3, h4 {
 }
 
 .cta-banner {
-  background: radial-gradient(circle at center, rgba(255, 61, 180, 0.15) 0%, rgba(17, 17, 20, 0.95) 75%);
-  border: 1px solid rgba(255, 61, 180, 0.35);
+  background: radial-gradient(circle at center, rgba(255, 255, 255, 0.15) 0%, rgba(17, 17, 20, 0.95) 75%);
+  border: 1px solid rgba(255, 255, 255, 0.35);
   border-radius: 20px;
   padding: 60px 40px;
   text-align: center;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.8), 0 0 30px rgba(255, 61, 180, 0.2);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.8), 0 0 30px rgba(255, 255, 255, 0.2);
 }
 
 .cta-title {
